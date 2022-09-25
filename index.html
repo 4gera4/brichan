@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<meta charset="UTF-8">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="igra.css">
+    <script src="nuu.js"></script>
+        <script src="vkBridge.js"></script>
+
+<script>
+      <script src="https://unpkg.com/react@15/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+
+  <script src="https://unpkg.com/babel-standalone@6/babel.js"></script>
+  // Sends event to client
+  vkBridge.send('VKWebAppInit');
+</script>
+    <script type="text/babel" src="sc.js"> 
+    import bridge from '@vkontakte/vk-bridge';
+
+// Sends event to client
+bridge.send('VKWebAppInit');
+
+// Subscribes to event, sended by client
+bridge.subscribe(e => console.log(e));
+    </script>
+    <title>AAAAAAAAAA</title>
+    <style>
+    #block {
+    position: absolute;
+    top:50vh;
+    left: 40vw;
+        width: 20vw;
+        height: 20vw;
+    }
+    #e {
+        position: relative;
+    }
+.arrows {
+width: 10vw;
+height: 10vw;
+}
+#up {
+position: relative;
+left: 10vw;
+}
+.knopki {
+position: absolute;
+bottom: 2vh;
+right: 2vw;
+}
+i {
+border: solid black;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 3px;
+}
+.arrowLeft{
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+}
+    </style>
+<style type="text/css">
+body {
+background-color: #a3bdff;
+	padding: 15px 0;
+}
+
+.btn {
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 25px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #444;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+}
+.btn:focus-visible {
+	border: 1px solid #4c51f9;
+	outline: none;
+}
+.btn:hover {
+	transition: all 0.2s;
+	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.btn:active {
+	background-color: #808080;
+}
+.btn:disabled {
+	background-color: #eee;
+	border-color: #eee;
+	color: #444;
+	cursor: not-allowed;
+}
+.timer {
+position: absolute;
+top: 1vh;
+left: 49vw;
+}
+</style>
+</head>
+<body onload="uploaded()">
+<div class="timer"><span id="timer">60</span></div>
+<div class="zate"  id="zatemnenie">
+	  <div class="ok" id="okno">
+ <div align="center" class="menu">
+<p><a class="btn"  onclick="start()" href="#" class="close">Начать игру</a></p>
+<p><button class="btn" onclick="level()">Сложность: <span id="level">Легко</span></button></p>
+<p><button class="btn" onclick="skin()">Скин: <span id="skin">BMW auto</span></button></p>
+</div>
+	  </div>
+	</div>
+<div><a class="button7" onclick="pausee()" href="#zatemnenie" id="knopka17" style="position: absolute; top: 1vh; text-decoration: none; color: black;"><i class="arrowLeft"></i>в меню</a></div>
+<div id="e"></div>
+<div id="bad"></div>
+<img id="block" src="stock/car1.png"/></img>
+<div class="knopki">
+<table>
+<tr><td><img onclick="move(1)" class="arrows" id="up" src="arrows/up.png"/></td></tr>
+<tr><td><img class="arrows" onclick="move(3)" src="arrows/left.png"/></td><td><img class="arrows" onclick="move(4)" src="arrows/down.png"/></td><td><img class="arrows" onclick="move(2)" src="arrows/right.png"/></td></tr>
+</table>
+</div>
+<!--    <script>-->
+<!--    var d=document.getElementById("e");-->
+<!--    var img=document.createElement("img");-->
+<!--    d.appendChild(img);-->
+<!--    img.src="2.jpg";-->
+<!--    img.style.height=10+"vw";-->
+<!--    img.style.width=10+"vw";-->
+<!--</script>-->
+</body>
+</html>
+

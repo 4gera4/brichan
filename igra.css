@@ -1,0 +1,160 @@
+﻿/* масло */
+.stol {
+margin: auto;
+position: relative;
+	width: 100px;
+	height: 500px;
+	border: solid 2px black;
+	background: linear-gradient(to top, white 34%, green 40%, yellow 55%, red 100%);
+}
+#lin {
+	position: relative;
+	margin: auto;
+	top: 0;
+}
+
+/* чужие кнопки*/
+
+  
+ .animate {
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+      }
+.action-button
+{
+  position: relative;
+  padding: 10px 40px;
+  margin: 0px 10px 10px 0px;
+  float: left;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #FFF;
+  text-decoration: none;  
+}
+.blue
+{
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+}
+.red
+{
+  background-color: #E74C3C;
+  border-bottom: 5px solid #BD3E31;
+  text-shadow: 0px -2px #BD3E31;
+}
+.action-button:active
+{
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+
+
+/*покупка*/
+.he {
+	 white-space: pre-wrap;
+}
+
+a.button24 {
+position: relative;
+  width: 210px;
+  height: 140px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #d47dbd #000 #800e61;
+  border-radius: 6px;
+  background: linear-gradient(#f08bd5, #cc3fa6) #E38916;
+  transition: 0.2s;
+} 
+
+
+
+
+a.button10 {
+top: 69px;
+left: -250px;
+position: relative;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+a.button10:hover { background: rgb(53, 167, 110); }
+a.button10:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+h2.po {
+position: relative;
+top: -18px;
+font-size:32px;
+text-shadow: 5px 2px 4px #bd99b2;
+			   }
+			   
+		/*кнопки*/
+			   
+			   
+			   .zate {
+		background-color: #a3bdff;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+		z-index: 1;
+	  }
+
+	  .zate:target {display: block;}
+		  
+	  }
+	  .close {
+		display: inline-block;
+		border: 1px solid #6b2a5d;
+		color: #6b2a5d;
+		padding: 0 12px;
+		margin: 10px;
+		text-decoration: none;
+		background: #e08bce;
+		font-size: 14pt;
+		cursor:pointer;
+	  }
+	  .close:hover {background: #e6e6ff;}
+/*подбор*/
+body {
+	background-color:  #b7c9eb;
+}
+.btn {
+	max-width: 100%;
+	
+}
+.e{
+	top: 0;
+	
+}
+.kanistra {
+	width: 15px;
+	height: 15px;
+}
+#hei {
+	width: 100vh;
+	height: 100vh; /* 100vh - 100% от высоты viewport(окна браузера) */
+}
+#h {
+	max-width: 100%;
+}
+#okno {
+position: relative;
+top:40vh;
+}
