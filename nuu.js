@@ -124,7 +124,7 @@ if(pauss==false){
     img.style.height=7+"vw";
     img.style.width=7+"vw";
     bombb=true;
-   // let delBoom = setTimeout(del3, 50000);
+    let delBoom = setTimeout(del3, 50000);
 }
 	}
 	function del3() {
@@ -287,7 +287,7 @@ score++;
 }
 	break;
 		case 3:
-    alert("Âû ïðîèãðàëè");
+    alert("Вы проиграли! Ваш результат: "+score);
 	var bad=document.getElementById("bad");
 	var child2=document.getElementById("bomb");
 	bad.removeChild(child2);
