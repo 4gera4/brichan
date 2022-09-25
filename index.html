@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--<meta charset="UTF-8">-->
+   <!-- <!--<meta charset="UTF-8">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="igra.css">
     <script src="nuu.js"></script>
         <script src="vkBridge.js"></script>
 
-<script>
+
       <script src="https://unpkg.com/react@15/dist/react.js"></script>
   <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
 
   <script src="https://unpkg.com/babel-standalone@6/babel.js"></script>
-  // Sends event to client
-  vkBridge.send('VKWebAppInit');
-</script>
+
     <script type="text/babel" src="sc.js"> 
     import bridge from '@vkontakte/vk-bridge';
 
@@ -24,6 +22,9 @@ bridge.send('VKWebAppInit');
 // Subscribes to event, sended by client
 bridge.subscribe(e => console.log(e));
     </script>
+	<script>  // Sends event to client
+  vkBridge.send('VKWebAppInit');
+</script>
     <title>AAAAAAAAAA</title>
     <style>
     #block {
@@ -118,13 +119,13 @@ left: 49vw;
 <div class="zate"  id="zatemnenie">
 	  <div class="ok" id="okno">
  <div align="center" class="menu">
-<p><a class="btn"  onclick="start()" href="#" class="close">Начать игру</a></p>
-<p><button class="btn" onclick="level()">Сложность: <span id="level">Легко</span></button></p>
-<p><button class="btn" onclick="skin()">Скин: <span id="skin">BMW auto</span></button></p>
+<p><a class="btn"  onclick="start()" href="#" class="close">ГЌГ Г·Г ГІГј ГЁГЈГ°Гі</a></p>
+<p><button class="btn" onclick="level()">Г‘Г«Г®Г¦Г­Г®Г±ГІГј: <span id="level">Г‹ГҐГЈГЄГ®</span></button></p>
+<p><button class="btn" onclick="skin()">Г‘ГЄГЁГ­: <span id="skin">BMW auto</span></button></p>
 </div>
 	  </div>
 	</div>
-<div><a class="button7" onclick="pausee()" href="#zatemnenie" id="knopka17" style="position: absolute; top: 1vh; text-decoration: none; color: black;"><i class="arrowLeft"></i>в меню</a></div>
+<div><a class="button7" onclick="pausee()" href="#zatemnenie" id="knopka17" style="position: absolute; top: 1vh; text-decoration: none; color: black;"><i class="arrowLeft"></i>Гў Г¬ГҐГ­Гѕ</a></div>
 <div id="e"></div>
 <div id="bad"></div>
 <img id="block" src="stock/car1.png"/></img>
